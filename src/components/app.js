@@ -24,12 +24,16 @@ class App extends React.Component {
 				>
 					Click Me!
 				</button>
+				<br />
+				<br />
 
 				<input
 					type="text"
 					onChange={e => this.setState({ title: e.target.value })}
 				></input>
-				<p> vous avez cliqué {this.state.count} fois</p>
+				<p>
+					<h2> vous avez cliqué {this.state.count} fois </h2>
+				</p>
 				<MaList numbers={numbers} title={this.state.title} />
 			</>
 		);
