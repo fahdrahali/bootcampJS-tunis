@@ -1,0 +1,51 @@
+{
+	"name": "bootcampjs-js",
+	"description": "BootcampJS tunisien 2019",
+	"version": "0.1.0",
+	"license": "MIT",
+	"dependencies": {
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
+		"react-scripts": "3.2.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --passWithNoTests",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"prettier": {
+		"bracketSpacing": true,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"enzyme": "^3.10.0",
+		"enzyme-adapter-react-16": "^1.15.1",
+		"eslint": "^6.3.0",
+		"eslint-config-airbnb": "^18.0.1",
+		"eslint-config-prettier": "^6.2.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-prettier": "^3.1.0",
+		"eslint-plugin-react": "^7.14.3",
+		"prettier": "^1.18.2"
+	}
+}
