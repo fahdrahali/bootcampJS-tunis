@@ -1,40 +1,25 @@
 import React from 'react';
-import MaList from './liste';
+
+import Home from './home';
+import Create from './create';
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { count: 0, value: '', title: '' };
+		this.state = { location: 'home' };
 	}
 
 	render() {
-		const numbers =
-			this.state.count > 0
-				? new Array(this.state.count).fill(0).map((a, i) => i)
-				: [];
+		var page = <Home />;
+
+		if (this.state.location === 'create') {
+			page = <Create />;
+		}
 
 		return (
 			<>
-				<button
-					onClick={e => {
-						e.preventDefault();
-						e.stopPropagation();
-						this.setState({ count: this.state.count + 1 });
-					}}
-				>
-					Click Me!
-				</button>
-				<br />
-				<br />
-
-				<input
-					type="text"
-					onChange={e => this.setState({ title: e.target.value })}
-				></input>
-				<p>
-					<h2> vous avez cliqué {this.state.count} fois </h2>
-				</p>
-				<MaList numbers={numbers} title={this.state.title} />
+				<h2>Supper Appli</h2>
+				{page};
 			</>
 		);
 	}
