@@ -1,0 +1,17 @@
+.div-home {
+	text-align: center;
+	size: 20dpi;
+	border: 10px;
+	color: blueviolet;
+}
+
+.button-home {
+	size: 10dpi;
+	color: blue;
+}
+
+.h2-app {
+	background: cornflowerblue;
+	text-align: center;
+	color: darkblue;
+}
