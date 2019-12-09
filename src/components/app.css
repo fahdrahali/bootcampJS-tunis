@@ -15,3 +15,10 @@
 	text-align: center;
 	color: darkblue;
 }
+
+.header-table {
+	background-color: rgb(216, 234, 252);
+	font-size: 30;
+
+	font-style: normal;
+}

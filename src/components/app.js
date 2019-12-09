@@ -2,17 +2,13 @@ import React from 'react';
 
 import Home from './home';
 import Create from './create';
-import Badge from '@material-ui/core/Badge';
 
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
 import Container from '@material-ui/core/Container';
+import Icons from './icons';
 
 class App extends React.Component {
 	constructor(props) {
@@ -31,12 +27,12 @@ class App extends React.Component {
 			<div>
 				<AppBar position="static">
 					<Toolbar>
-						<IconButton edge="start" color="inherit" aria-label="menu">
-							<MenuIcon />
-						</IconButton>
 						<Typography>
-							<h2>Supper Appli</h2>
+							<h2>Téléphone &nbsp;</h2>
 						</Typography>
+
+						<Icons small />
+
 						{/* <Button color="inherit">Login</Button> */}
 					</Toolbar>
 				</AppBar>
